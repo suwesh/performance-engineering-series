@@ -1,6 +1,6 @@
 Results:
 # 1. Default OpenMP MAX Threads configuration
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py<br>
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py`<br>
 torch.Size([1, 1024])<br>
 faiss behaviour when faiss.omp_get_max_threads() = 12<br>
 Average Latency for Approach 1: 18602.4974<br>
@@ -16,8 +16,8 @@ P95 Latency (ns): 31409.00<br>
 P99 Latency (ns): 67486.00<br>
 
 # 2. Controlled OpenMP MAX Threads configuration
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1<br>
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py<br>
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1`<br>
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py`<br>
 torch.Size([1, 1024])<br>
 faiss behaviour when faiss.omp_get_max_threads() = 1<br>
 Average Latency for Approach 1: 21912.7643<br>
