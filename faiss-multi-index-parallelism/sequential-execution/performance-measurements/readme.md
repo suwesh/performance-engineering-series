@@ -9,7 +9,7 @@ Query:
 How to create a new loan application?
 
 Hardware:
-CPU: AMD Ryzen 5 5500
+CPU: AMD Ryzen 5 5500;
 RAM: 32 GB DDR4@3200MHz
 
 OS:
