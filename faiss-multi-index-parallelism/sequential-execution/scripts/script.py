@@ -1,4 +1,3 @@
-from concurrent.futures import ThreadPoolExecutor
 from retrieval.models import to_embedder_uat, to_reranker # implementation specific imports for embedding and reranking functions
 import time
 import cProfile
