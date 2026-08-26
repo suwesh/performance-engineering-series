@@ -32,7 +32,7 @@ cmd>for i in {1..10}; do python benchmark_retrieval.py; done: combine in below
 cProfiling tuna graph: Projects/chatbotkb_retrieval/profiling_evidences/retrieval_sequential.prof
 
 ## Stage Breakdown + Raw End-to-End Measurements
-Measured inside sahayak_kb_retriever() using time.perf_counter().
+Measured inside chatbot_kb_retriever() using time.perf_counter().
 Metrics:
 - Embedder Stage Latency
 - FAISS Retrieval Stage Latency
@@ -111,7 +111,7 @@ FAISS searches Stage (with sequential search): 0.000306s
 Reranker Stage: 2.2081s
 Total Retrieval Time: 2.4421s
 
-cProfiling tuna graph: Projects/sahayak_kb_retrieval/profiling_evidences/faiss_sequential.prof
+cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_sequential.prof
 
 ## Observations
 
@@ -131,8 +131,8 @@ cProfiling tuna graph: Projects/sahayak_kb_retrieval/profiling_evidences/faiss_s
 6. FAISS retrieval latency in the sequential implementation remained several orders of magnitude lower than embedding and reranking latency.
 
 # controlled FAISS runtime:
-(env3.12) suwesh@HHFD0000524:~/Projects/sahayak_kb_retrieval$ export OMP_NUM_THREADS=1
-(env3.12) suwesh@HHFD0000524:~/Projects/sahayak_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done
+(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1
+(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done
 
 Embedder Stage: 0.0496s
 controlled faiss internal threading source A search took: 0.000230s
