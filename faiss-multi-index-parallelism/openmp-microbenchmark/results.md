@@ -1,6 +1,6 @@
 Results:
 # 1. Default OpenMP MAX Threads configuration
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py
+(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py  
 torch.Size([1, 1024])
 faiss behaviour when faiss.omp_get_max_threads() = 12
 Average Latency for Approach 1: 18602.4974
