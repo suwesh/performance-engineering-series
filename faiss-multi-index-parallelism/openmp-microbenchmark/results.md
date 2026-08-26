@@ -13,7 +13,7 @@ Max Latency (ns): 341141.00\
 Std Dev (ns): 12153.43\
 P95 Latency (ns): 31409.00\
 P99 Latency (ns): 67486.00\
-\
+
 # 2. Controlled OpenMP MAX Threads configuration
 (env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1\
 (env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ python script.py\
@@ -29,4 +29,4 @@ Min Latency (ns): 16380.00\
 Max Latency (ns): 366677.00\
 Std Dev (ns): 11928.04\
 P95 Latency (ns): 28774.00\
-P99 Latency (ns): 45155.00\
+P99 Latency (ns): 45155.00
