@@ -1,0 +1,2452 @@
+nohup: ignoring input
+
+========================================
+GPU inference primary benchmark
+Mode:     normal
+Service:  prof-gemma4vllm.service
+Protocol: /home/cbotadmin/gpu-profiling/protocol_v1.2.yaml
+========================================
+
+Running three warm-ups for normal + plain_text...
+Warm-up: workload=plain_text repetition=991
+
+
+Run: v1-normal-plain-plain_001-r991
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-plain-plain_001-r991/summary.json
+TTFO: 167.223658 ms
+E2E: 4123.324572 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-up: workload=plain_text repetition=992
+
+
+Run: v1-normal-plain-plain_001-r992
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-plain-plain_001-r992/summary.json
+TTFO: 78.569359 ms
+E2E: 4003.196741 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-up: workload=plain_text repetition=993
+
+
+Run: v1-normal-plain-plain_001-r993
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-plain-plain_001-r993/summary.json
+TTFO: 78.757238 ms
+E2E: 5064.137282 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-ups completed for normal + plain_text.
+
+Running measured requests for normal + plain_text...
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=1
+
+
+Run: v1-normal-plain-plain_001-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r01/summary.json
+TTFO: 79.26596 ms
+E2E: 4024.556768 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=2
+
+
+Run: v1-normal-plain-plain_001-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r02/summary.json
+TTFO: 77.921979 ms
+E2E: 4002.519647 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=3
+
+
+Run: v1-normal-plain-plain_001-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r03/summary.json
+TTFO: 77.578671 ms
+E2E: 7077.577089 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=4
+
+
+Run: v1-normal-plain-plain_001-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r04/summary.json
+TTFO: 77.79572 ms
+E2E: 5053.083281 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=5
+
+
+Run: v1-normal-plain-plain_001-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r05/summary.json
+TTFO: 88.350418 ms
+E2E: 7089.101211 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=6
+
+
+Run: v1-normal-plain-plain_001-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r06/summary.json
+TTFO: 78.325569 ms
+E2E: 4034.561575 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=7
+
+
+Run: v1-normal-plain-plain_001-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r07/summary.json
+TTFO: 78.137195 ms
+E2E: 4044.932608 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=8
+
+
+Run: v1-normal-plain-plain_001-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r08/summary.json
+TTFO: 78.269528 ms
+E2E: 5126.001187 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=9
+
+
+Run: v1-normal-plain-plain_001-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r09/summary.json
+TTFO: 79.340781 ms
+E2E: 3994.076113 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=10
+
+
+Run: v1-normal-plain-plain_001-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r10/summary.json
+TTFO: 79.206338 ms
+E2E: 4004.921478 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=11
+
+
+Run: v1-normal-plain-plain_001-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r11/summary.json
+TTFO: 77.56745 ms
+E2E: 5052.855633 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=12
+
+
+Run: v1-normal-plain-plain_001-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r12/summary.json
+TTFO: 78.783939 ms
+E2E: 3993.830997 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=13
+
+
+Run: v1-normal-plain-plain_001-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r13/summary.json
+TTFO: 78.206183 ms
+E2E: 6284.919341 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=14
+
+
+Run: v1-normal-plain-plain_001-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r14/summary.json
+TTFO: 79.460053 ms
+E2E: 5054.856708 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=15
+
+
+Run: v1-normal-plain-plain_001-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r15/summary.json
+TTFO: 76.78002 ms
+E2E: 5052.304436 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=16
+
+
+Run: v1-normal-plain-plain_001-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r16/summary.json
+TTFO: 77.169923 ms
+E2E: 4034.177733 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=17
+
+
+Run: v1-normal-plain-plain_001-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r17/summary.json
+TTFO: 78.36169 ms
+E2E: 5669.964178 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=18
+
+
+Run: v1-normal-plain-plain_001-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r18/summary.json
+TTFO: 77.907931 ms
+E2E: 5659.03522 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=19
+
+
+Run: v1-normal-plain-plain_001-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r19/summary.json
+TTFO: 77.398017 ms
+E2E: 4064.708636 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_001
+  repetition=20
+
+
+Run: v1-normal-plain-plain_001-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_001-r20/summary.json
+TTFO: 82.554329 ms
+E2E: 6612.107149 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=1
+
+
+Run: v1-normal-plain-plain_002-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r01/summary.json
+TTFO: 83.606024 ms
+E2E: 4040.201942 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=2
+
+
+Run: v1-normal-plain-plain_002-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r02/summary.json
+TTFO: 77.419064 ms
+E2E: 4033.930795 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=3
+
+
+Run: v1-normal-plain-plain_002-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r03/summary.json
+TTFO: 77.597579 ms
+E2E: 4034.054568 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=4
+
+
+Run: v1-normal-plain-plain_002-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r04/summary.json
+TTFO: 77.843614 ms
+E2E: 5084.386299 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=5
+
+
+Run: v1-normal-plain-plain_002-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r05/summary.json
+TTFO: 77.628532 ms
+E2E: 4033.853122 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=6
+
+
+Run: v1-normal-plain-plain_002-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r06/summary.json
+TTFO: 78.908344 ms
+E2E: 5086.068053 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=7
+
+
+Run: v1-normal-plain-plain_002-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r07/summary.json
+TTFO: 76.499637 ms
+E2E: 5698.993786 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=8
+
+
+Run: v1-normal-plain-plain_002-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r08/summary.json
+TTFO: 77.915634 ms
+E2E: 5084.98096 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=9
+
+
+Run: v1-normal-plain-plain_002-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r09/summary.json
+TTFO: 77.607466 ms
+E2E: 4034.273997 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=10
+
+
+Run: v1-normal-plain-plain_002-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r10/summary.json
+TTFO: 77.415962 ms
+E2E: 3898.86577 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=11
+
+
+Run: v1-normal-plain-plain_002-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r11/summary.json
+TTFO: 81.549532 ms
+E2E: 5088.106046 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=12
+
+
+Run: v1-normal-plain-plain_002-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r12/summary.json
+TTFO: 79.025577 ms
+E2E: 5085.510157 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=13
+
+
+Run: v1-normal-plain-plain_002-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r13/summary.json
+TTFO: 77.814573 ms
+E2E: 5084.879872 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=14
+
+
+Run: v1-normal-plain-plain_002-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r14/summary.json
+TTFO: 79.883703 ms
+E2E: 4046.85496 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=15
+
+
+Run: v1-normal-plain-plain_002-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r15/summary.json
+TTFO: 79.027624 ms
+E2E: 3848.835886 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=16
+
+
+Run: v1-normal-plain-plain_002-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r16/summary.json
+TTFO: 79.2951 ms
+E2E: 3859.613292 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=17
+
+
+Run: v1-normal-plain-plain_002-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r17/summary.json
+TTFO: 77.878727 ms
+E2E: 5084.789628 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=18
+
+
+Run: v1-normal-plain-plain_002-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r18/summary.json
+TTFO: 77.277947 ms
+E2E: 4012.911724 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=19
+
+
+Run: v1-normal-plain-plain_002-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r19/summary.json
+TTFO: 77.83186 ms
+E2E: 5418.342454 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_002
+  repetition=20
+
+
+Run: v1-normal-plain-plain_002-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_002-r20/summary.json
+TTFO: 78.007934 ms
+E2E: 5502.411961 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=1
+
+
+Run: v1-normal-plain-plain_003-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r01/summary.json
+TTFO: 78.523184 ms
+E2E: 6389.621275 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=2
+
+
+Run: v1-normal-plain-plain_003-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r02/summary.json
+TTFO: 78.093334 ms
+E2E: 6389.521393 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=3
+
+
+Run: v1-normal-plain-plain_003-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r03/summary.json
+TTFO: 77.573272 ms
+E2E: 7005.679525 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=4
+
+
+Run: v1-normal-plain-plain_003-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r04/summary.json
+TTFO: 77.804001 ms
+E2E: 6849.07775 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=5
+
+
+Run: v1-normal-plain-plain_003-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r05/summary.json
+TTFO: 77.607877 ms
+E2E: 6388.811344 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=6
+
+
+Run: v1-normal-plain-plain_003-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r06/summary.json
+TTFO: 77.059818 ms
+E2E: 7067.682747 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=7
+
+
+Run: v1-normal-plain-plain_003-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r07/summary.json
+TTFO: 76.69237 ms
+E2E: 8097.473257 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=8
+
+
+Run: v1-normal-plain-plain_003-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r08/summary.json
+TTFO: 77.793535 ms
+E2E: 6766.31378 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=9
+
+
+Run: v1-normal-plain-plain_003-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r09/summary.json
+TTFO: 78.177463 ms
+E2E: 6526.405701 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=10
+
+
+Run: v1-normal-plain-plain_003-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r10/summary.json
+TTFO: 78.763165 ms
+E2E: 6391.201483 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=11
+
+
+Run: v1-normal-plain-plain_003-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r11/summary.json
+TTFO: 77.150049 ms
+E2E: 6827.566039 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=12
+
+
+Run: v1-normal-plain-plain_003-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r12/summary.json
+TTFO: 77.874856 ms
+E2E: 8034.775581 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=13
+
+
+Run: v1-normal-plain-plain_003-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r13/summary.json
+TTFO: 78.114916 ms
+E2E: 8035.620773 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=14
+
+
+Run: v1-normal-plain-plain_003-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r14/summary.json
+TTFO: 77.668184 ms
+E2E: 6389.595129 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=15
+
+
+Run: v1-normal-plain-plain_003-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r15/summary.json
+TTFO: 79.005176 ms
+E2E: 6412.07946 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=16
+
+
+Run: v1-normal-plain-plain_003-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r16/summary.json
+TTFO: 78.618006 ms
+E2E: 6443.514628 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=17
+
+
+Run: v1-normal-plain-plain_003-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r17/summary.json
+TTFO: 79.259174 ms
+E2E: 6976.887298 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=18
+
+
+Run: v1-normal-plain-plain_003-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r18/summary.json
+TTFO: 81.21912 ms
+E2E: 6872.773197 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=19
+
+
+Run: v1-normal-plain-plain_003-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r19/summary.json
+TTFO: 77.540629 ms
+E2E: 6869.933922 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=plain_text
+  prompt=plain_003
+  repetition=20
+
+
+Run: v1-normal-plain-plain_003-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-plain-plain_003-r20/summary.json
+TTFO: 77.830435 ms
+E2E: 6473.270658 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurements completed for normal + plain_text.
+
+Running three warm-ups for normal + reasoning_intensive...
+Warm-up: workload=reasoning_intensive repetition=991
+
+
+Run: v1-normal-reasoning-reasoning_001-r991
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-reasoning-reasoning_001-r991/summary.json
+TTFO: 78.595664 ms
+E2E: 6721.168438 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-up: workload=reasoning_intensive repetition=992
+
+
+Run: v1-normal-reasoning-reasoning_001-r992
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-reasoning-reasoning_001-r992/summary.json
+TTFO: 79.296012 ms
+E2E: 6805.657217 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-up: workload=reasoning_intensive repetition=993
+
+
+Run: v1-normal-reasoning-reasoning_001-r993
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-reasoning-reasoning_001-r993/summary.json
+TTFO: 79.812104 ms
+E2E: 6148.176917 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-ups completed for normal + reasoning_intensive.
+
+Running measured requests for normal + reasoning_intensive...
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=1
+
+
+Run: v1-normal-reasoning-reasoning_001-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r01/summary.json
+TTFO: 80.62419 ms
+E2E: 6128.440555 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=2
+
+
+Run: v1-normal-reasoning-reasoning_001-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r02/summary.json
+TTFO: 80.210581 ms
+E2E: 6148.807541 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=3
+
+
+Run: v1-normal-reasoning-reasoning_001-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r03/summary.json
+TTFO: 79.871803 ms
+E2E: 6127.410005 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=4
+
+
+Run: v1-normal-reasoning-reasoning_001-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r04/summary.json
+TTFO: 78.964513 ms
+E2E: 6147.441303 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=5
+
+
+Run: v1-normal-reasoning-reasoning_001-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r05/summary.json
+TTFO: 79.444904 ms
+E2E: 6147.898005 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=6
+
+
+Run: v1-normal-reasoning-reasoning_001-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r06/summary.json
+TTFO: 79.080422 ms
+E2E: 6147.871402 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=7
+
+
+Run: v1-normal-reasoning-reasoning_001-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r07/summary.json
+TTFO: 78.731154 ms
+E2E: 9392.096307 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=8
+
+
+Run: v1-normal-reasoning-reasoning_001-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r08/summary.json
+TTFO: 79.518022 ms
+E2E: 6147.719494 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=9
+
+
+Run: v1-normal-reasoning-reasoning_001-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r09/summary.json
+TTFO: 80.365902 ms
+E2E: 6649.509548 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=10
+
+
+Run: v1-normal-reasoning-reasoning_001-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r10/summary.json
+TTFO: 80.194838 ms
+E2E: 6389.113749 ms
+Valid: benchmark=True, phase=True, output=False
+Issues: expected_final_answer_missing
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=11
+
+
+Run: v1-normal-reasoning-reasoning_001-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r11/summary.json
+TTFO: 80.255919 ms
+E2E: 6138.39713 ms
+Valid: benchmark=True, phase=True, output=False
+Issues: expected_final_answer_missing
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=12
+
+
+Run: v1-normal-reasoning-reasoning_001-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r12/summary.json
+TTFO: 79.356938 ms
+E2E: 6128.156832 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=13
+
+
+Run: v1-normal-reasoning-reasoning_001-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r13/summary.json
+TTFO: 79.324083 ms
+E2E: 6147.585499 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=14
+
+
+Run: v1-normal-reasoning-reasoning_001-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r14/summary.json
+TTFO: 80.347348 ms
+E2E: 6148.841351 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=15
+
+
+Run: v1-normal-reasoning-reasoning_001-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r15/summary.json
+TTFO: 81.312466 ms
+E2E: 6149.496334 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=16
+
+
+Run: v1-normal-reasoning-reasoning_001-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r16/summary.json
+TTFO: 79.176816 ms
+E2E: 6930.869241 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=17
+
+
+Run: v1-normal-reasoning-reasoning_001-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r17/summary.json
+TTFO: 80.499717 ms
+E2E: 6127.884502 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=18
+
+
+Run: v1-normal-reasoning-reasoning_001-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r18/summary.json
+TTFO: 79.979731 ms
+E2E: 6127.50284 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=19
+
+
+Run: v1-normal-reasoning-reasoning_001-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r19/summary.json
+TTFO: 79.291485 ms
+E2E: 6147.82029 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_001
+  repetition=20
+
+
+Run: v1-normal-reasoning-reasoning_001-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_001-r20/summary.json
+TTFO: 81.243148 ms
+E2E: 6149.495807 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=1
+
+
+Run: v1-normal-reasoning-reasoning_002-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r01/summary.json
+TTFO: 82.056466 ms
+E2E: 7154.992715 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=2
+
+
+Run: v1-normal-reasoning-reasoning_002-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r02/summary.json
+TTFO: 88.235579 ms
+E2E: 7926.562722 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=3
+
+
+Run: v1-normal-reasoning-reasoning_002-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r03/summary.json
+TTFO: 79.42566 ms
+E2E: 8761.761916 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=4
+
+
+Run: v1-normal-reasoning-reasoning_002-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r04/summary.json
+TTFO: 79.598375 ms
+E2E: 7921.025213 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=5
+
+
+Run: v1-normal-reasoning-reasoning_002-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r05/summary.json
+TTFO: 81.001594 ms
+E2E: 10124.466399 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=6
+
+
+Run: v1-normal-reasoning-reasoning_002-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r06/summary.json
+TTFO: 81.927219 ms
+E2E: 8280.095599 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=7
+
+
+Run: v1-normal-reasoning-reasoning_002-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r07/summary.json
+TTFO: 80.003245 ms
+E2E: 10716.861009 ms
+Valid: benchmark=True, phase=True, output=False
+Issues: output_truncated, expected_final_answer_missing
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=8
+
+
+Run: v1-normal-reasoning-reasoning_002-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r08/summary.json
+TTFO: 80.788109 ms
+E2E: 7155.017498 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=9
+
+
+Run: v1-normal-reasoning-reasoning_002-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r09/summary.json
+TTFO: 98.00149 ms
+E2E: 10109.121564 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=10
+
+
+Run: v1-normal-reasoning-reasoning_002-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r10/summary.json
+TTFO: 79.344244 ms
+E2E: 10122.659287 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=11
+
+
+Run: v1-normal-reasoning-reasoning_002-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r11/summary.json
+TTFO: 80.859926 ms
+E2E: 10071.312602 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=12
+
+
+Run: v1-normal-reasoning-reasoning_002-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r12/summary.json
+TTFO: 80.21254 ms
+E2E: 7921.095685 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=13
+
+
+Run: v1-normal-reasoning-reasoning_002-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r13/summary.json
+TTFO: 81.198015 ms
+E2E: 7921.869198 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=14
+
+
+Run: v1-normal-reasoning-reasoning_002-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r14/summary.json
+TTFO: 79.172558 ms
+E2E: 9478.179041 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=15
+
+
+Run: v1-normal-reasoning-reasoning_002-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r15/summary.json
+TTFO: 79.193369 ms
+E2E: 7920.559906 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=16
+
+
+Run: v1-normal-reasoning-reasoning_002-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r16/summary.json
+TTFO: 79.546861 ms
+E2E: 7920.44291 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=17
+
+
+Run: v1-normal-reasoning-reasoning_002-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r17/summary.json
+TTFO: 79.629201 ms
+E2E: 9603.666684 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=18
+
+
+Run: v1-normal-reasoning-reasoning_002-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r18/summary.json
+TTFO: 79.767834 ms
+E2E: 8479.02436 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=19
+
+
+Run: v1-normal-reasoning-reasoning_002-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r19/summary.json
+TTFO: 80.138603 ms
+E2E: 8005.362441 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_002
+  repetition=20
+
+
+Run: v1-normal-reasoning-reasoning_002-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_002-r20/summary.json
+TTFO: 80.23266 ms
+E2E: 7921.551275 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=1
+
+
+Run: v1-normal-reasoning-reasoning_003-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r01/summary.json
+TTFO: 80.382593 ms
+E2E: 9390.957591 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=2
+
+
+Run: v1-normal-reasoning-reasoning_003-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r02/summary.json
+TTFO: 79.819754 ms
+E2E: 9390.869549 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=3
+
+
+Run: v1-normal-reasoning-reasoning_003-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r03/summary.json
+TTFO: 80.648592 ms
+E2E: 8549.750851 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=4
+
+
+Run: v1-normal-reasoning-reasoning_003-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r04/summary.json
+TTFO: 80.951166 ms
+E2E: 8507.322867 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=5
+
+
+Run: v1-normal-reasoning-reasoning_003-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r05/summary.json
+TTFO: 79.244086 ms
+E2E: 8506.352994 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=6
+
+
+Run: v1-normal-reasoning-reasoning_003-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r06/summary.json
+TTFO: 79.300572 ms
+E2E: 8548.336195 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=7
+
+
+Run: v1-normal-reasoning-reasoning_003-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r07/summary.json
+TTFO: 78.79903 ms
+E2E: 8505.908261 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=8
+
+
+Run: v1-normal-reasoning-reasoning_003-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r08/summary.json
+TTFO: 80.065533 ms
+E2E: 9422.590219 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=9
+
+
+Run: v1-normal-reasoning-reasoning_003-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r09/summary.json
+TTFO: 84.062096 ms
+E2E: 8553.995709 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=10
+
+
+Run: v1-normal-reasoning-reasoning_003-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r10/summary.json
+TTFO: 79.882328 ms
+E2E: 8528.644064 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=11
+
+
+Run: v1-normal-reasoning-reasoning_003-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r11/summary.json
+TTFO: 82.650072 ms
+E2E: 8530.327518 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=12
+
+
+Run: v1-normal-reasoning-reasoning_003-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r12/summary.json
+TTFO: 80.192364 ms
+E2E: 9390.729522 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=13
+
+
+Run: v1-normal-reasoning-reasoning_003-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r13/summary.json
+TTFO: 82.708669 ms
+E2E: 8467.602523 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=14
+
+
+Run: v1-normal-reasoning-reasoning_003-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r14/summary.json
+TTFO: 79.555735 ms
+E2E: 8528.299315 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=15
+
+
+Run: v1-normal-reasoning-reasoning_003-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r15/summary.json
+TTFO: 80.966984 ms
+E2E: 9391.566926 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=16
+
+
+Run: v1-normal-reasoning-reasoning_003-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r16/summary.json
+TTFO: 79.550151 ms
+E2E: 9390.464427 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=17
+
+
+Run: v1-normal-reasoning-reasoning_003-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r17/summary.json
+TTFO: 82.420632 ms
+E2E: 9392.754054 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=18
+
+
+Run: v1-normal-reasoning-reasoning_003-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r18/summary.json
+TTFO: 81.141429 ms
+E2E: 9391.798875 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=19
+
+
+Run: v1-normal-reasoning-reasoning_003-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r19/summary.json
+TTFO: 81.097038 ms
+E2E: 8529.010535 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=reasoning_intensive
+  prompt=reasoning_003
+  repetition=20
+
+
+Run: v1-normal-reasoning-reasoning_003-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-reasoning-reasoning_003-r20/summary.json
+TTFO: 81.652148 ms
+E2E: 8509.291555 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurements completed for normal + reasoning_intensive.
+
+Running three warm-ups for normal + tool_calling...
+Warm-up: workload=tool_calling repetition=991
+
+
+Run: v1-normal-tool-tool_001-r991
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-tool-tool_001-r991/summary.json
+TTFO: 95.456031 ms
+E2E: 3385.537765 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-up: workload=tool_calling repetition=992
+
+
+Run: v1-normal-tool-tool_001-r992
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-tool-tool_001-r992/summary.json
+TTFO: 79.758474 ms
+E2E: 3370.486433 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-up: workload=tool_calling repetition=993
+
+
+Run: v1-normal-tool-tool_001-r993
+Summary: /home/cbotadmin/gpu-profiling/primary/warmups/runs/v1-normal-tool-tool_001-r993/summary.json
+TTFO: 92.312617 ms
+E2E: 3381.759317 ms
+Valid: benchmark=True, phase=True, output=True
+Warm-ups completed for normal + tool_calling.
+
+Running measured requests for normal + tool_calling...
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=1
+
+
+Run: v1-normal-tool-tool_001-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r01/summary.json
+TTFO: 79.205781 ms
+E2E: 3369.305646 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=2
+
+
+Run: v1-normal-tool-tool_001-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r02/summary.json
+TTFO: 80.00685 ms
+E2E: 3369.602823 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=3
+
+
+Run: v1-normal-tool-tool_001-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r03/summary.json
+TTFO: 78.538106 ms
+E2E: 3368.497788 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=4
+
+
+Run: v1-normal-tool-tool_001-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r04/summary.json
+TTFO: 80.208374 ms
+E2E: 3370.009752 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=5
+
+
+Run: v1-normal-tool-tool_001-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r05/summary.json
+TTFO: 79.693792 ms
+E2E: 3369.91412 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=6
+
+
+Run: v1-normal-tool-tool_001-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r06/summary.json
+TTFO: 79.60705 ms
+E2E: 3369.949831 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=7
+
+
+Run: v1-normal-tool-tool_001-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r07/summary.json
+TTFO: 77.956442 ms
+E2E: 3368.330078 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=8
+
+
+Run: v1-normal-tool-tool_001-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r08/summary.json
+TTFO: 79.033866 ms
+E2E: 3369.41826 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=9
+
+
+Run: v1-normal-tool-tool_001-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r09/summary.json
+TTFO: 79.830045 ms
+E2E: 3370.094806 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=10
+
+
+Run: v1-normal-tool-tool_001-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r10/summary.json
+TTFO: 79.114947 ms
+E2E: 3369.388779 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=11
+
+
+Run: v1-normal-tool-tool_001-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r11/summary.json
+TTFO: 78.461663 ms
+E2E: 3368.286418 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=12
+
+
+Run: v1-normal-tool-tool_001-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r12/summary.json
+TTFO: 81.013491 ms
+E2E: 3370.966885 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=13
+
+
+Run: v1-normal-tool-tool_001-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r13/summary.json
+TTFO: 78.975414 ms
+E2E: 3369.781877 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=14
+
+
+Run: v1-normal-tool-tool_001-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r14/summary.json
+TTFO: 80.021979 ms
+E2E: 3370.355371 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=15
+
+
+Run: v1-normal-tool-tool_001-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r15/summary.json
+TTFO: 78.474412 ms
+E2E: 3368.58774 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=16
+
+
+Run: v1-normal-tool-tool_001-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r16/summary.json
+TTFO: 80.286275 ms
+E2E: 3371.373191 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=17
+
+
+Run: v1-normal-tool-tool_001-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r17/summary.json
+TTFO: 79.327453 ms
+E2E: 3369.649765 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=18
+
+
+Run: v1-normal-tool-tool_001-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r18/summary.json
+TTFO: 80.582432 ms
+E2E: 3370.744711 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=19
+
+
+Run: v1-normal-tool-tool_001-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r19/summary.json
+TTFO: 79.408995 ms
+E2E: 3369.914212 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_001
+  repetition=20
+
+
+Run: v1-normal-tool-tool_001-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_001-r20/summary.json
+TTFO: 79.275011 ms
+E2E: 3369.11147 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=1
+
+
+Run: v1-normal-tool-tool_002-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r01/summary.json
+TTFO: 80.06798 ms
+E2E: 3370.456935 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=2
+
+
+Run: v1-normal-tool-tool_002-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r02/summary.json
+TTFO: 78.537024 ms
+E2E: 3368.842788 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=3
+
+
+Run: v1-normal-tool-tool_002-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r03/summary.json
+TTFO: 78.753969 ms
+E2E: 3368.970122 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=4
+
+
+Run: v1-normal-tool-tool_002-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r04/summary.json
+TTFO: 81.161386 ms
+E2E: 3371.624592 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=5
+
+
+Run: v1-normal-tool-tool_002-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r05/summary.json
+TTFO: 79.170667 ms
+E2E: 3369.72259 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=6
+
+
+Run: v1-normal-tool-tool_002-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r06/summary.json
+TTFO: 79.131076 ms
+E2E: 3369.28925 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=7
+
+
+Run: v1-normal-tool-tool_002-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r07/summary.json
+TTFO: 81.197965 ms
+E2E: 3371.607014 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=8
+
+
+Run: v1-normal-tool-tool_002-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r08/summary.json
+TTFO: 80.068719 ms
+E2E: 3370.56107 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=9
+
+
+Run: v1-normal-tool-tool_002-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r09/summary.json
+TTFO: 80.831306 ms
+E2E: 3370.991798 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=10
+
+
+Run: v1-normal-tool-tool_002-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r10/summary.json
+TTFO: 80.758086 ms
+E2E: 3371.08601 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=11
+
+
+Run: v1-normal-tool-tool_002-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r11/summary.json
+TTFO: 80.400038 ms
+E2E: 3371.006088 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=12
+
+
+Run: v1-normal-tool-tool_002-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r12/summary.json
+TTFO: 81.098293 ms
+E2E: 3371.727475 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=13
+
+
+Run: v1-normal-tool-tool_002-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r13/summary.json
+TTFO: 82.21091 ms
+E2E: 3372.109592 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=14
+
+
+Run: v1-normal-tool-tool_002-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r14/summary.json
+TTFO: 78.523044 ms
+E2E: 3368.75025 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=15
+
+
+Run: v1-normal-tool-tool_002-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r15/summary.json
+TTFO: 78.706558 ms
+E2E: 3368.77178 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=16
+
+
+Run: v1-normal-tool-tool_002-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r16/summary.json
+TTFO: 79.971187 ms
+E2E: 3370.607063 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=17
+
+
+Run: v1-normal-tool-tool_002-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r17/summary.json
+TTFO: 80.202853 ms
+E2E: 3370.437529 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=18
+
+
+Run: v1-normal-tool-tool_002-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r18/summary.json
+TTFO: 78.819481 ms
+E2E: 3368.882536 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=19
+
+
+Run: v1-normal-tool-tool_002-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r19/summary.json
+TTFO: 80.04935 ms
+E2E: 3370.26098 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_002
+  repetition=20
+
+
+Run: v1-normal-tool-tool_002-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_002-r20/summary.json
+TTFO: 80.605573 ms
+E2E: 3380.894478 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=1
+
+
+Run: v1-normal-tool-tool_003-r01
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r01/summary.json
+TTFO: 79.487707 ms
+E2E: 3359.214742 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=2
+
+
+Run: v1-normal-tool-tool_003-r02
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r02/summary.json
+TTFO: 80.138512 ms
+E2E: 3349.159486 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=3
+
+
+Run: v1-normal-tool-tool_003-r03
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r03/summary.json
+TTFO: 80.846148 ms
+E2E: 3360.575851 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=4
+
+
+Run: v1-normal-tool-tool_003-r04
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r04/summary.json
+TTFO: 78.565275 ms
+E2E: 3357.993181 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=5
+
+
+Run: v1-normal-tool-tool_003-r05
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r05/summary.json
+TTFO: 80.732177 ms
+E2E: 3360.581322 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=6
+
+
+Run: v1-normal-tool-tool_003-r06
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r06/summary.json
+TTFO: 80.225404 ms
+E2E: 3351.455722 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=7
+
+
+Run: v1-normal-tool-tool_003-r07
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r07/summary.json
+TTFO: 83.695258 ms
+E2E: 3363.308313 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=8
+
+
+Run: v1-normal-tool-tool_003-r08
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r08/summary.json
+TTFO: 79.828097 ms
+E2E: 3359.310659 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=9
+
+
+Run: v1-normal-tool-tool_003-r09
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r09/summary.json
+TTFO: 92.189836 ms
+E2E: 3371.632017 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=10
+
+
+Run: v1-normal-tool-tool_003-r10
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r10/summary.json
+TTFO: 79.384437 ms
+E2E: 3358.940361 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=11
+
+
+Run: v1-normal-tool-tool_003-r11
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r11/summary.json
+TTFO: 80.494493 ms
+E2E: 3359.803498 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=12
+
+
+Run: v1-normal-tool-tool_003-r12
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r12/summary.json
+TTFO: 79.533712 ms
+E2E: 3358.982237 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=13
+
+
+Run: v1-normal-tool-tool_003-r13
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r13/summary.json
+TTFO: 79.225674 ms
+E2E: 3358.510965 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=14
+
+
+Run: v1-normal-tool-tool_003-r14
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r14/summary.json
+TTFO: 80.393241 ms
+E2E: 3359.871957 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=15
+
+
+Run: v1-normal-tool-tool_003-r15
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r15/summary.json
+TTFO: 79.281345 ms
+E2E: 3359.114267 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=16
+
+
+Run: v1-normal-tool-tool_003-r16
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r16/summary.json
+TTFO: 79.569102 ms
+E2E: 3359.331611 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=17
+
+
+Run: v1-normal-tool-tool_003-r17
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r17/summary.json
+TTFO: 79.334216 ms
+E2E: 3358.717667 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=18
+
+
+Run: v1-normal-tool-tool_003-r18
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r18/summary.json
+TTFO: 79.305766 ms
+E2E: 3358.873361 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=19
+
+
+Run: v1-normal-tool-tool_003-r19
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r19/summary.json
+TTFO: 79.335966 ms
+E2E: 3358.799408 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurement:
+  mode=normal
+  workload=tool_calling
+  prompt=tool_003
+  repetition=20
+
+
+Run: v1-normal-tool-tool_003-r20
+Summary: /home/cbotadmin/gpu-profiling/primary/runs/v1-normal-tool-tool_003-r20/summary.json
+TTFO: 80.703338 ms
+E2E: 3360.255539 ms
+Valid: benchmark=True, phase=True, output=True
+
+Measurements completed for normal + tool_calling.
+
+
+========================================
+Primary benchmark completed
+Mode: normal
+Expected measured rows added: 180
+Results file: /home/cbotadmin/gpu-profiling/primary/results.csv
+========================================
