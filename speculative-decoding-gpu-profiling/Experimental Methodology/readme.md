@@ -81,3 +81,9 @@ Output log: run_primary_benchmark_normal.log<br>
 Speculative decoding: `./run_primary_benchmark.sh mtp`<br>
 Output log: run_primary_benchmark_mtp.log
 ## Profiling
+### NVIDIA Nsight Systems
+Autoregressive decoding: `./run_nsys_profile_w_cuda.sh normal <workload> <prompt_id> <run_id>`<br>
+Outputs: 
+<br>
+Speculative decoding: `./run_nsys_profile_w_cuda.sh mtp <workload> <prompt_id> <run_id>`<br>
+Outputs: 
