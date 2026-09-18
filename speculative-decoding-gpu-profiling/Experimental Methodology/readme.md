@@ -65,3 +65,10 @@ NVIDIA Nsight Systems version 2026.4.1.191-264138605071v0
 NVIDIA (R) Nsight Compute Command Line Profiler<br>
 Copyright (c) 2018-2026 NVIDIA Corporation<br>
 Version 2026.2.1.0 (build 38286902) (public-release)<br>
+
+# Models
+## Autoregressive decoder and Speculative decoding verifier
+<a href="https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct">google/gemma-4-E4B-it-qat-w4a16-ct</a> 
+## Dedicated Speculative drafter
+<a href="https://huggingface.co/google/gemma-4-E4B-it-assistant">google/gemma-4-E4B-it-assistant</a>
+
