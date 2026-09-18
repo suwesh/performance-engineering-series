@@ -1,0 +1,151 @@
+protocol:
+  name: GPU Inference Profiling Study
+  version: "1.2"
+  status: frozen
+
+research_question: >-
+  How does MTP speculative decoding affect performance across plain-text,
+  reasoning-intensive, and tool-calling workloads, and what execution behavior
+  explains the differences?
+
+deployments:
+  normal: {service: prof-gemma4vllm.service, speculative_decoding: false}
+  mtp: {service: prof-gemma4vllm-mtp.service, speculative_decoding: true, speculative_tokens: 2}
+
+request:
+  url: "http://127.0.0.1:8000/v1/chat/completions"
+  model: "google/gemma-4-e4b"
+  model_path: "/home/cbotadmin/models/gemma4-w4a16ct"
+  drafter_path: "/home/cbotadmin/models/gemma4-drafter"
+  stream: true
+  include_usage: true
+  temperature: 0.0
+  top_p: 1.0
+  seed: 42
+  benchmark_max_tokens: 1024
+  profile_max_tokens: 1024
+  parallel_tool_calls: false
+  max_model_len: 8192
+  max_num_seqs: 1
+  gpu_memory_utilization: 0.80
+  chunked_prefill: true
+  max_num_batched_tokens: 2048
+  kv_cache_dtype: "bfloat16"
+  prefix_caching_enabled: true
+  chat_template: "/home/cbotadmin/models/gemma4-w4a16ct/tool_chat_template_gemma4.jinja"
+  chat_template_content_format: "openai"
+  reasoning_parser: "gemma4"
+  tool_call_parser: "gemma4"
+  responses_api_store: false
+  chat_template_kwargs:
+    enable_thinking: true
+
+phase_timing:
+  clock: time.perf_counter_ns
+  reasoning: delta.reasoning
+  final_answer: delta.content
+  tool_call: delta.tool_calls
+  timestamps: [request_start_ns, first_output_ns, first_reasoning_ns, first_final_answer_ns, first_tool_call_ns, request_end_ns]
+  nvtx_markers: [RUN_START, FIRST_OUTPUT, FIRST_REASONING, FIRST_FINAL, FIRST_TOOL_CALL, RUN_END]
+  claim_limit: Profiler intervals are phase-associated; kernels are not inherently reasoning-specific.
+
+tools:
+  - type: function
+    function:
+      name: get_weather
+      description: Get the weather forecast for a city and date.
+      parameters:
+        type: object
+        properties:
+          city: {type: string}
+          date: {type: string, description: ISO date YYYY-MM-DD}
+          unit: {type: string, enum: [celsius, fahrenheit]}
+        required: [city, date, unit]
+        additionalProperties: false
+  - type: function
+    function:
+      name: get_local_time
+      description: Get the current local time for a city.
+      parameters:
+        type: object
+        properties: {city: {type: string}}
+        required: [city]
+        additionalProperties: false
+  - type: function
+    function:
+      name: create_reminder
+      description: Create a reminder.
+      parameters:
+        type: object
+        properties:
+          title: {type: string}
+          datetime: {type: string, description: ISO 8601 date-time}
+        required: [title, datetime]
+        additionalProperties: false
+
+workloads:
+  plain_text:
+    expected: reasoning followed by exactly eight poem lines
+    prompts:
+      - id: plain_001
+        system: Follow the requested final format exactly. Add no title or commentary.
+        user: Write exactly eight lines of free-verse poetry about a spacecraft travelling beyond the Solar System. Each line must contain six to twelve words.
+      - id: plain_002
+        system: Follow the requested final format exactly. Add no title or commentary.
+        user: Write exactly eight lines of free-verse poetry about rain falling on a quiet city at night. Each line must contain six to twelve words.
+      - id: plain_003
+        system: Follow the requested final format exactly. Add no title or commentary.
+        user: Write exactly eight lines of free-verse poetry about an old computer starting after many years. Each line must contain six to twelve words.
+
+  reasoning_intensive:
+    expected: reasoning followed by one strict FINAL line
+    prompts:
+      - id: reasoning_001
+        system: Reason carefully. End with exactly one line in the required FINAL format.
+        user: "A program is 80% perfectly parallelizable and 20% serial. Using Amdahl's law, calculate speedup with 8 processors and the maximum theoretical speedup. End exactly: FINAL: S8=<3 decimals>; Smax=<3 decimals>"
+        expected_final: "FINAL: S8=3.333; Smax=5.000"
+      - id: reasoning_002
+        system: Reason carefully. End with exactly one line in the required FINAL format.
+        user: "A 120-second workload is 75% perfectly parallelizable and 25% serial. Using Amdahl's law, calculate speedup and runtime with 6 processors. End exactly: FINAL: speedup=<3 decimals>; runtime=<3 decimals>s"
+        expected_final: "FINAL: speedup=2.667; runtime=45.000s"
+      - id: reasoning_003
+        system: Reason carefully. End with exactly one line in the required FINAL format.
+        user: "A program has serial fraction 0.10. Using Amdahl's law, find the minimum integer processors needed for speedup at least 5. End exactly: FINAL: processors=<integer>; speedup=<3 decimals>"
+        expected_final: "FINAL: processors=9; speedup=5.000"
+
+  tool_calling:
+    expected: reasoning followed by exactly one get_weather call
+    tool_choice: auto
+    prompts:
+      - {id: tool_001, system: Use exactly one available tool and do not answer directly., user: Get the weather forecast for Luxembourg City on 2026-10-15 in Celsius., expected_tool: get_weather, expected_arguments: {city: Luxembourg City, date: '2026-10-15', unit: celsius}}
+      - {id: tool_002, system: Use exactly one available tool and do not answer directly., user: Get the weather forecast for Gurugram on 2026-11-20 in Fahrenheit., expected_tool: get_weather, expected_arguments: {city: Gurugram, date: '2026-11-20', unit: fahrenheit}}
+      - {id: tool_003, system: Use exactly one available tool and do not answer directly., user: Get the weather forecast for Helsinki on 2026-12-05 in Celsius., expected_tool: get_weather, expected_arguments: {city: Helsinki, date: '2026-12-05', unit: celsius}}
+
+cache:
+  primary: controlled_cold
+  method: Insert a pre-generated unique identifier at the beginning of each user message; reuse the identical prepared payload for paired normal and MTP runs.
+  warm_cache_experiment: deferred
+
+warmup:
+  settle_after_health_seconds: 30
+  minimum_per_workload: 3
+  maximum_per_workload: 10
+  require_two_consecutive_requests_without_jit_warning: true
+
+repetitions:
+  pilot: {prompts_per_workload: 2, repetitions_per_prompt: 5}
+  primary: {prompts_per_workload: 3, valid_repetitions_per_prompt: 20}
+
+metrics: [time_to_first_output_ms, time_to_first_final_output_ms, end_to_end_latency_ms, reasoning_associated_duration_ms, final_or_tool_associated_duration_ms, prompt_tokens, completion_tokens, output_tokens_per_second]
+
+validity:
+  benchmark_invalid_if: [JIT during measurement, wrong service or uncontrolled GPU work, HTTP or stream failure, profiler active during benchmark, cache condition not achieved]
+  phase_mapping_invalid_if: [phase boundaries unavailable, required phase timestamp missing]
+  output_invalid_if: [finish_reason is length, required final output absent, tool call or arguments mismatch]
+  preserve_invalid_runs: true
+
+artifacts:
+  results: results.csv
+  per_run: [runs/<run_id>/raw.jsonl, runs/<run_id>/summary.json]
+  profiles: [profiles/torch, profiles/nsys, profiles/ncu]
+  run_id: v1-<mode>-<workload>-<prompt_id>-r<repetition>
