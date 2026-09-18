@@ -75,5 +75,9 @@ Version 2026.2.1.0 (build 38286902) (public-release)<br>
 # Experimental Procedure
 
 ## Benchmarking
-
+Autoregressive decoding: `./run_primary_benchmark.sh normal`<br>
+Output log: run_primary_benchmark_normal.log<br>
+<br>
+Speculative decoding: `./run_primary_benchmark.sh mtp`<br>
+Output log: run_primary_benchmark_mtp.log
 ## Profiling
