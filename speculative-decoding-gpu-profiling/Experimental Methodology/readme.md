@@ -87,3 +87,9 @@ Outputs:
 <br>
 Speculative decoding: `./run_nsys_profile_w_cuda.sh mtp <workload> <prompt_id> <run_id>`<br>
 Outputs: 
+### PyTorch Profiler
+Autoregressive decoding: `./run_torch_profile.sh normal <workload> <prompt_id> <run_id>`<br>
+Outputs: 
+<br>
+Speculative decoding: `./run_torch_profile.sh mtp <workload> <prompt_id> <run_id>`<br>
+Outputs: 
