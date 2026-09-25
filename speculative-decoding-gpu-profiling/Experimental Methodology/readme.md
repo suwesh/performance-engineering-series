@@ -93,3 +93,5 @@ Outputs:
 <br>
 Speculative decoding: `./run_torch_profile.sh mtp <workload> <prompt_id> <run_id>`<br>
 Outputs: 
+### NVIDIA Nsight Compute: <br>
+Outputs: 
