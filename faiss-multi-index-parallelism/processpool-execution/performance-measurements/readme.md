@@ -1,5 +1,5 @@
 # Multicore Benchmark
-
+```text
 Date: 2026-08-24
 
 Branch:
@@ -23,10 +23,10 @@ Retrieval Sources with sizes:(109KB, 265KB, 565KB)
 
 Execution Model:
 Multicore / Parallel processing -> from concurrent.futures import ProcessPoolExecutor
-
+```
 ## Raw End-to-End Runs
-Measured outside chatbot_kb_retriever() using time.perf_counter().
-cmd>for i in {1..10}; do python benchmark_retrieval.py; done: combine in below
+Measured outside chatbot_kb_retriever() using time.perf_counter().<br>
+cmd> `for i in {1..10}; do python benchmark_retrieval.py; done`: combine in below <br>
 cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/retrieval_multicore_ProcessPoolExecutor.prof
 
 ## Stage Breakdown + Raw End-to-End Measurements
@@ -36,8 +36,8 @@ Metrics:
 - FAISS Retrieval Stage Latency
 - Reranker Stage Latency
 
-cmd>for i in {1..10}; do python benchmark_retrieval.py; done
-for i in {1..10}; do python benchmark_retrieval.py; done
+cmd>`for i in {1..10}; do python benchmark_retrieval.py; done`
+```text
 Embedder Stage: 0.0715s
 FAISS searches Stage (with multicore: ProcessPoolExecutor search): 0.074790s
 Reranker Stage: 0.8332s
@@ -78,7 +78,7 @@ Embedder Stage: 0.0252s
 FAISS searches Stage (with multicore: ProcessPoolExecutor search): 0.081516s
 Reranker Stage: 0.7500s
 Total Retrieval Time: 0.8572s
-
+```
 cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_multicore_ProcessPoolExecutor.prof
 
 ## Observations
@@ -95,9 +95,9 @@ cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_m
 6. Sequential execution remained the fastest implementation among the tested approaches.
 
 # controlled FAISS runtime:
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done
-
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1` <br>
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done`
+```text
 Embedder Stage: 0.0843s
 controlled faiss internal threading FAISS searches Stage (with external multicore: ProcessPoolExecutor search): 0.077597s
 Reranker Stage: 0.8239s
@@ -138,3 +138,4 @@ Embedder Stage: 0.0270s
 controlled faiss internal threading FAISS searches Stage (with external multicore: ProcessPoolExecutor search): 0.070618s
 Reranker Stage: 0.8419s
 Total Retrieval Time: 0.9399s
+```
