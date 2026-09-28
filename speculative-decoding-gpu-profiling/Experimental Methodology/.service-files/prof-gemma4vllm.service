@@ -4,16 +4,16 @@ After=network.target
 Conflicts=prof-gemma4vllm-mtp.service
 
 [Service]
-User=cbotadmin
-Group=cbotadmin
+User=suwesh
+Group=suwesh
 
-Environment="PATH=/home/cbotadmin/env312-vllm024/bin:/home/cbotadmin/.local/bin:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PATH=/home/suwesh/env312-vllm024/bin:/home/suwesh/.local/bin:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/bin"
 Environment="PYTHONUNBUFFERED=1"
 
-WorkingDirectory=/home/cbotadmin
+WorkingDirectory=/home/suwesh
 
-ExecStart=/home/cbotadmin/env312-vllm024/bin/python -m vllm.entrypoints.openai.api_server \
-    --model /home/cbotadmin/models/gemma4-w4a16ct \
+ExecStart=/home/suwesh/env312-vllm024/bin/python -m vllm.entrypoints.openai.api_server \
+    --model /home/suwesh/models/gemma4-w4a16ct \
     --served-model-name google/gemma-4-e4b \
     --host 0.0.0.0 \
     --port 8000 \
@@ -29,7 +29,7 @@ ExecStart=/home/cbotadmin/env312-vllm024/bin/python -m vllm.entrypoints.openai.a
     --tool-call-parser gemma4 \
     --reasoning-parser gemma4 \
     --generation-config vllm \
-    --chat-template /home/cbotadmin/models/gemma4-w4a16ct/tool_chat_template_gemma4.jinja \
+    --chat-template /home/suwesh/models/gemma4-w4a16ct/tool_chat_template_gemma4.jinja \
     --chat-template-content-format openai
 
 Restart=on-failure
