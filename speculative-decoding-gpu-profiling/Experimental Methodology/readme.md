@@ -76,22 +76,23 @@ Version 2026.2.1.0 (build 38286902) (public-release)<br>
 
 ## Benchmarking
 Autoregressive decoding: `./run_primary_benchmark.sh normal`<br>
-Output log: run_primary_benchmark_normal.log<br>
+Output log: run_primary_benchmark_normal.log > in Results/RQ1_Application-Level Performance<br>
 <br>
 Speculative decoding: `./run_primary_benchmark.sh mtp`<br>
-Output log: run_primary_benchmark_mtp.log
+Output log: run_primary_benchmark_mtp.log > in Results/RQ1_Application-Level Performance
 ## Profiling
 ### NVIDIA Nsight Systems
 Autoregressive decoding: `./run_nsys_profile_w_cuda.sh normal <workload> <prompt_id> <run_id>`<br>
-Outputs: 
+Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/nsys/normal</a>
 <br>
 Speculative decoding: `./run_nsys_profile_w_cuda.sh mtp <workload> <prompt_id> <run_id>`<br>
-Outputs: 
+Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/nsys/mtp</a>
 ### PyTorch Profiler
 Autoregressive decoding: `./run_torch_profile.sh normal <workload> <prompt_id> <run_id>`<br>
-Outputs: 
+Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/torch/normal</a>
 <br>
 Speculative decoding: `./run_torch_profile.sh mtp <workload> <prompt_id> <run_id>`<br>
-Outputs: 
-### NVIDIA Nsight Compute: <br>
-Outputs: 
+Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/torch/mtp</a>
+### NVIDIA Nsight Compute: 
+`Results/GEMM_vs_GEMV_Kernel_Analysis/run_ncu_notes.md` <br>
+Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/ncu</a>
