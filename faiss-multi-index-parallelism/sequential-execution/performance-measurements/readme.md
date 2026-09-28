@@ -1,5 +1,5 @@
 # Sequential Benchmark
-
+```text
 Date: 2026-08-24
 
 Branch:
@@ -25,10 +25,10 @@ Retrieval Sources with sizes:(109KB, 265KB, 565KB)
 
 Execution Model:
 Sequential
-
+```
 ## Raw End-to-End Runs
 Measured outside chatbot_kb_retriever() using time.perf_counter().
-cmd>for i in {1..10}; do python benchmark_retrieval.py; done: combine in below
+cmd>`for i in {1..10}; do python benchmark_retrieval.py; done`: combine in below<br>
 cProfiling tuna graph: Projects/chatbotkb_retrieval/profiling_evidences/retrieval_sequential.prof
 
 ## Stage Breakdown + Raw End-to-End Measurements
@@ -38,8 +38,8 @@ Metrics:
 - FAISS Retrieval Stage Latency
 - Reranker Stage Latency
 
-cmd>for i in {1..10}; do python benchmark_retrieval.py; done
-for i in {1..10}; do python benchmark_retrieval.py; done
+cmd>`for i in {1..10}; do python benchmark_retrieval.py; done`
+```text
 Embedder Stage: 0.3215s
 source A search took: 0.000125s
 source B search took: 0.000065s
@@ -110,7 +110,7 @@ source C search took: 0.000103s
 FAISS searches Stage (with sequential search): 0.000306s
 Reranker Stage: 2.2081s
 Total Retrieval Time: 2.4421s
-
+```
 cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_sequential.prof
 
 ## Observations
@@ -131,9 +131,9 @@ cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_s
 6. FAISS retrieval latency in the sequential implementation remained several orders of magnitude lower than embedding and reranking latency.
 
 # controlled FAISS runtime:
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done
-
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1` <br>
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done`
+```text
 Embedder Stage: 0.0496s
 controlled faiss internal threading source A search took: 0.000230s
 controlled faiss internal threading source B search took: 0.000098s
@@ -204,3 +204,4 @@ controlled faiss internal threading source C search took: 0.000110s
 controlled internal threading FAISS searches Stage (with sequential search): 0.000717s
 Reranker Stage: 0.8043s
 Total Retrieval Time: 0.8319s
+```
