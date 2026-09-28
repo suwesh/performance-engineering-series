@@ -1,0 +1,55 @@
+[Unit]
+Description=vLLM PyTorch Profiler Server - MTP Speculative Decoding
+After=network.target
+Conflicts=gemma4vllm.service
+Conflicts=gemma4vllm-mtp.service
+Conflicts=prof-gemma4vllm.service
+Conflicts=prof-gemma4vllm-mtp.service
+Conflicts=torch-prof-gemma4vllm.service
+
+[Service]
+User=suwesh
+Group=suwesh
+
+Environment="PATH=/home/suwesh/env312-vllm024/bin:/home/suwesh/.local/bin:/usr/local/cuda/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONUNBUFFERED=1"
+Environment="HOME=/home/suwesh"
+Environment="XDG_CACHE_HOME=/home/suwesh/.cache"
+Environment="HF_HOME=/home/suwesh/.cache/huggingface"
+Environment="TORCH_HOME=/home/suwesh/.cache/torch"
+Environment="TRITON_CACHE_DIR=/home/suwesh/.cache/triton"
+Environment="VLLM_RPC_TIMEOUT=1800000"
+
+WorkingDirectory=/home/suwesh/app/herosage
+
+ExecStart=/home/suwesh/env312-vllm024/bin/python -m vllm.entrypoints.openai.api_server \
+    --model /home/suwesh/models/gemma4-w4a16ct \
+    --served-model-name google/gemma-4-e4b \
+    --host 0.0.0.0 \
+    --port 8000 \
+    --dtype auto \
+    --gpu-memory-utilization 0.80 \
+    --max-model-len 8192 \
+    --enable-chunked-prefill \
+    --max-num-batched-tokens 2048 \
+    --max-num-seqs 1 \
+    --kv-cache-dtype bfloat16 \
+    --enable-prefix-caching \
+    --enable-auto-tool-choice \
+    --tool-call-parser gemma4 \
+    --reasoning-parser gemma4 \
+    --generation-config vllm \
+    --chat-template /home/suwesh/models/gemma4-w4a16ct/tool_chat_template_gemma4.jinja \
+    --chat-template-content-format openai \
+    --profiler-config '{"profiler":"torch","torch_profiler_dir":"/home/suwesh/gpu-profiling/profiles/torch/mtp","torch_profiler_record_shapes":true,"torch_profiler_with_memory":false,"torch_profiler_with_stack":true,"torch_profiler_with_flops":false,"torch_profiler_use_gzip":true}' \
+    --speculative-config '{"method":"mtp","model":"/home/suwesh/models/gemma4-drafter","num_speculative_tokens":2}'
+
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=300
+KillSignal=SIGTERM
+KillMode=control-group
+OOMPolicy=stop
+
+[Install]
+WantedBy=multi-user.target
