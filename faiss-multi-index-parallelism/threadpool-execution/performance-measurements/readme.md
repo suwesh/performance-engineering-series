@@ -26,7 +26,7 @@ ThreadPoolExecutor (3 worker threads)
 ```
 ## Raw End-to-End Runs
 Measured outside chatbot_kb_retriever() using time.perf_counter().
-cmd>f`or i in {1..10}; do python benchmark_retrieval.py; done` <br>
+cmd>`for i in {1..10}; do python benchmark_retrieval.py; done` <br>
 ```text
 Total Retrieval Time: 1.4032s
 Total Retrieval Time: 1.3841s
