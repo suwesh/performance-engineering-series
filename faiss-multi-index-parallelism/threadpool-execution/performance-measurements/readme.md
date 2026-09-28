@@ -1,5 +1,5 @@
 # Multithreading Benchmark
-
+```text
 Date: 2026-08-24
 
 Branch:
@@ -23,10 +23,11 @@ Retrieval Sources with sizes:(109KB, 265KB, 565KB)
 
 Execution Model:
 ThreadPoolExecutor (3 worker threads)
-
+```
 ## Raw End-to-End Runs
 Measured outside chatbot_kb_retriever() using time.perf_counter().
-cmd>for i in {1..10}; do python benchmark_retrieval.py; done
+cmd>f`or i in {1..10}; do python benchmark_retrieval.py; done` <br>
+```text
 Total Retrieval Time: 1.4032s
 Total Retrieval Time: 1.3841s
 Total Retrieval Time: 1.2903s
@@ -37,7 +38,7 @@ Total Retrieval Time: 1.8829s
 Total Retrieval Time: 1.7627s
 Total Retrieval Time: 1.7438s
 Total Retrieval Time: 2.3106s
-
+```
 cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/retrieval_threadpool.prof
 
 ## Stage Breakdown Measurements
@@ -47,7 +48,8 @@ Metrics:
 - FAISS Retrieval Stage Latency
 - Reranker Stage Latency
 
-cmd>for i in {1..10}; do python benchmark_retrieval.py; done
+cmd>`for i in {1..10}; do python benchmark_retrieval.py; done` <br>
+```text
 Embedder Stage: 0.4318s
 FAISS searches Stage (with multithreading): 0.001309s
 Reranker Stage: 1.4992s
@@ -88,7 +90,7 @@ Embedder Stage: 0.1749s
 FAISS searches Stage (with multithreading): 0.001115s
 Reranker Stage: 1.3203s
 Total Retrieval Time: 1.4968s
-
+```
 cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_threadpool.prof
 
 ## Observations
@@ -108,9 +110,9 @@ cProfiling tuna graph: Projects/chatbot_kb_retrieval/profiling_evidences/faiss_t
 7. The retrieval stage was too short-lived for meaningful standalone cProfile visualization, with Tuna reporting near-zero cumulative execution time.
 
 # controlled FAISS runtime:
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1
-(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done
-
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ export OMP_NUM_THREADS=1` <br>
+`(env3.12) suwesh@HHFD0000524:~/Projects/chatbot_kb_retrieval$ for i in {1..10}; do python benchmark_retrieval.py; done`
+```text
 Embedder Stage: 0.0737s
 controlled faiss internal threading, FAISS searches Stage (with external multithreading): 0.001622s
 Reranker Stage: 0.7540s
@@ -151,3 +153,4 @@ Embedder Stage: 0.0212s
 controlled faiss internal threading, FAISS searches Stage (with external multithreading): 0.001324s
 Reranker Stage: 0.8056s
 Total Retrieval Time: 0.8284s
+```
