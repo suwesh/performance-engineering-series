@@ -2,8 +2,8 @@
 Captured: 2026-09-10T16:13:09+05:30
 
 ## OS:
-Red Hat Enterprise Linux release 9.8 (Plow)
-Kernel: Linux 5.14.0-687.45.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 1 21:20:37 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+`Red Hat Enterprise Linux release 9.8 (Plow)` <br>
+`Kernel: Linux 5.14.0-687.45.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 1 21:20:37 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux`
 
 ## GPU:
 ```text
