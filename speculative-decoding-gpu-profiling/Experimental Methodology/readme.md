@@ -94,5 +94,5 @@ Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-g
 Speculative decoding: `./run_torch_profile.sh mtp <workload> <prompt_id> <run_id>`<br>
 Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/torch/mtp</a>
 ### NVIDIA Nsight Compute: 
-`Results/GEMM_vs_GEMV_Kernel_Analysis/run_ncu_notes.md` <br>
+Procedure in: `run_ncu_notes.md` <br>
 Outputs: in <a href="https://www.kaggle.com/datasets/suwesh/beneath-the-tokens-gpu-profiling">gpu-profiling/profiles/ncu</a>
