@@ -1,5 +1,5 @@
 [Unit]
-Description=vLLM Controlled Profiling Server - Normal Decoding
+Description=vLLM Controlled Profiling Server - Autoregressive Generation
 After=network.target
 Conflicts=prof-gemma4vllm-mtp.service
 
