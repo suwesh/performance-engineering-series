@@ -1,4 +1,4 @@
-<div align="center"> <a href="https://suwesh.github.io/engineering-war-stories/007">⚔️Blog Post</a> | <a href="">📝Technical Report</a> </div>
+<div align="center"> <a href="https://suwesh.github.io/engineering-war-stories/007">⚔️Blog Post</a> | <a href="https://arxiv.org/abs/2609.35188">📝Technical Report</a> </div>
 
 ### Beneath the Tokens: A Performance Engineering Study of Multi-Token Prediction in GPU-Accelerated LLM Inference
 Autoregressive large language model inference repeatedly invokes the target model to generate one token at a time, making generation sensitive to GPU memory movement and sequential execution. This study evaluates two-token multi-token prediction (MTP) against autoregressive decoding in a controlled single-request deployment on an NVIDIA A10G GPU. A 360-request benchmark covered plain-text, reasoning-intensive, and tool-calling workloads, while runtime telemetry, Nsight Systems, PyTorch Profiler, and selected Nsight Compute measurements were used to explain the observed performance.<br>
